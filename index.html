@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Easy Encrypt | Encrypt Any String</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="main-title text-center">Ready to Encrypt?</h1>
+    <hr>
+    <div id="main-menu" class="text-center">
+      <h3 class="main-description">Main Menu</h3>
+      <a class="begin-btn btn btn-primary" role="button">
+        <i class="fa fa-lock" aria-hidden="true"></i> Encrypt a string</a>
+      <a class="exit-btn btn btn-danger" role="button">
+        <i class="fa fa-sign-out" aria-hidden="true"></i> Exit Program</a>
+    </div>
+    <div id="method-select" class="text-center">
+      <h3>Select an encryption method</h3>
+      <form>
+        <div class="row justify-content-md-center">
+          <div class="col-sm-4">
+            <div class="form-group text-left">
+              <select class="form-control" id="method-choices">
+                <option value=''>Select your method</option>
+                <option value="methodA">Method A</option>
+                <option value="methodB">Method B</option>
+                <option value="methodC">Method C</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="encrypted-area">
+      <form>
+        <div class="row justify-content-md-center">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="input-string">
+                <em>Type a string to encrypt</em>
+              </label>
+              <input id="input-string" class="form-control form-control-lg" type="text" placeholder="Start typing...">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center text-center">
+          <div class="col-sm-6">
+            <h3 class="encrypted-title">
+              <i class="fa fa-lock" aria-hidden="true"></i>Encrypted String
+              <br>
+            </h3>
+            <h3>
+              <span id="encrypted-output"></span>
+            </h3>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

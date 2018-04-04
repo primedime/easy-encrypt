@@ -1,0 +1,17 @@
+:root {
+  --encrypt-green: #07ff07;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-title {
+  font-size: 41px;
+  color: var(--encrypt-green);
+}
+
+.encrypted-title {
+  color: var(--encrypt-green);
+}
